@@ -61,13 +61,30 @@ public class Main {
     }
     public static void task8() {
         System.out.println("Задача 8.");
+        int monthSavings = 29000;
+        int totalSavings = 0;
+        for (int i =1; i <= 12;i++) {
+            totalSavings = totalSavings + monthSavings;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + totalSavings + " рублей.");
+        }
     }
-
     public static void task9() {
         System.out.println("Задача 9.");
+        int monthSavings = 29000;
+        int totalSavings = 0;
+        for (int i =1; i <= 12; i++) {
+            totalSavings = totalSavings + totalSavings / 100;
+            totalSavings = totalSavings + monthSavings;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + totalSavings + " рублей.");
+        }
     }
-
     public static void task10() {
         System.out.println("Задача 10.");
+        int a = 2;
+        int result;
+        for (int i = 1; i <=10; i++) {
+            result = a * i;
+            System.out.println(a + " * " + i + " = " + result);
+        }
     }
 }
