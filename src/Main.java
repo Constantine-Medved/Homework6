@@ -42,11 +42,9 @@ public class Main {
 
     public static void task5() {
         System.out.println("Задача 5.");
-        for (int i = 1904; i <= 2096; i = i + 4) {
-            if (i % 100 == 0 && i % 400 != 0) {
-                System.out.println(i + " год НЕ является високосным");
-            } else {
-                System.out.println(i + " год является високосным");
+        for (int year = 1904; year <= 2096; year++) {
+            if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+                System.out.println(year + " год является високосным");
             }
         }
     }
