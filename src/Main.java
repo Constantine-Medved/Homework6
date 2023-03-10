@@ -37,16 +37,28 @@ public class Main {
     }
     public static void task5() {
         System.out.println("Задача 5.");
-
+        for (int i = 1904; i <= 2096; i = i + 4) {
+            if (i % 100 == 0 && i % 400 !=0) {
+                System.out.println(i + " год НЕ является високосным");
+            } else {
+                System.out.println(i + " год является високосным");
+            }
+        }
     }
     public static void task6() {
         System.out.println("Задача 6.");
+        for (int i = 7; i <= 98; i = i +7) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
     }
-
     public static void task7() {
         System.out.println("Задача 7.");
+        for (int i = 1; i <= 512; i = i * 2) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
     }
-
     public static void task8() {
         System.out.println("Задача 8.");
     }
